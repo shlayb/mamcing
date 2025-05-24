@@ -23,23 +23,27 @@ export default function Header() {
   }, []);
 
   return (
-    <div className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${isFloating ? 'shadow-md p-4' : 'shadow-none p-0'} ${poppins.className}`}>
-      <div className={`py-8 px-42 bg-cyan-600 grid-cols-2 justify-between items-center transition-all duration-500 max-md:py-5 max-md:px-8 ${isFloating ? 'text-white rounded-2xl' : 'text-black rounded-b-2xl'}`}>
+    <div className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${isFloating ? 'p-4' : ' p-0'} ${poppins.className}`}>
+      <div
+        className={`py-9 px-42 bg-gradient-to-r from-cyan-500 to-blue-500 text-white grid-cols-2 justify-between items-center transition-all duration-500 max-md:py-5 max-md:px-8 ${
+          isFloating ? 'shadow-md  rounded-2xl' : 'shadow-2xs rounded-b-2xl'
+        }`}
+      >
         <div className="flex w-full justify-between space-x-2">
           <div>
-            <Link href="/" className={`text-2xl font-bold items-center transition-all duration-500 ${isFloating ? 'text-white' : 'text-white'}`}>
+            <Link href="/" className={`text-3xl font-bold items-center transition-all duration-500 text-white max-md:text-2xl`}>
               Mamcing
             </Link>
           </div>
           <div className="hidden md:flex space-x-12 items-center">
-            <Link href="#about" className={`text-lg font-medium transition-all duration-500 ${isFloating ? 'text-white' : 'text-black'}`}>
-              Kasih MaM
+            <Link href="#Kasihmam" className={`text-xl font-medium transition-all duration-500 `}>
+              Kasih mam
             </Link>
-            <Link href="#contact" className={`text-lg font-medium transition-all duration-500 ${isFloating ? 'text-white' : 'text-black'}`}>
-              Setting MaM
+            <Link href="#contact" className={`text-xl font-medium transition-all duration-500 `}>
+              Setting mam
             </Link>
-            <Link href="#blog" className={`text-lg font-medium transition-all duration-500 ${isFloating ? 'text-white' : 'text-black'}`}>
-              Lihat MaM
+            <Link href="#blog" className={`text-xl font-medium transition-all duration-500 `}>
+              Lihat mam
             </Link>
           </div>
           <div className="md:hidden flex items-center">
@@ -52,16 +56,16 @@ export default function Header() {
             </button>
           </div>
         </div>
-        <div className={`md:hidden bg-cyan-600 px-2 overflow-hidden transition-all duration-500 ease-in-out rounded-b-2xl ${Mobilenav ? 'max-h-60 py-4 opacity-100' : 'max-h-0 py-0 opacity-0'}`}>
+        <div className={`md:hidden px-2 overflow-hidden transition-all duration-500 ease-in-out rounded-b-2xl ${Mobilenav ? 'max-h-60 py-4 opacity-100' : 'max-h-0 py-0 opacity-0'}`}>
           <div className="flex flex-col text-center font-po  space-y-4 transform transition-transform duration-500 ease-in-out" style={{ transform: Mobilenav ? 'translateY(0)' : 'translateY(-20px)' }}>
-            <Link href="#about" className="text-lg font-medium text-white">
-              Kasih MaM
+            <Link href="#Kasihmam" className="text-lg font-medium text-white">
+              Kasih mam
             </Link>
             <Link href="#contact" className="text-lg font-medium text-white">
-              Setting MaM
+              Setting mam
             </Link>
             <Link href="#blog" className="text-lg font-medium text-white">
-              Lihat MaM
+              Lihat mam
             </Link>
           </div>
         </div>
