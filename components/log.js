@@ -57,7 +57,7 @@ export default function Log() {
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-200">
       <h1 className="text-4xl font-bold py-12">Lihat Mam</h1>
       <div className={`flex flex-col justify-center min-h-screen bg-gray-200 ${poppins.className}`}>
-        <div className="flex flex-col items-center space-y-2">{data && Object.keys(data).map((key, index) => <Table key={key} nomer={index + 1} waktu={key} gram={100} />)}</div>
+        <div className="flex flex-col items-center space-y-2">{data && Object.keys(data).map((key, index) => <Table key={key} nomer={index + 1} waktu={key} gram={data[key]} />)}</div>
       </div>
     </div>
   );
