@@ -25,7 +25,7 @@ export default function Header() {
   return (
     <div className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${isFloating ? 'p-4' : ' p-0'} ${poppins.className}`}>
       <div
-        className={`py-9 px-42 bg-gradient-to-r from-cyan-500 to-blue-500 text-white grid-cols-2 justify-between items-center transition-all duration-500 max-md:py-5 max-md:px-8 ${
+        className={`py-7 px-42 bg-gradient-to-r from-cyan-500 to-blue-500 text-white grid-cols-2 justify-between items-center transition-all duration-500 max-md:py-5 max-md:px-8 ${
           isFloating ? 'shadow-md  rounded-2xl' : 'shadow-2xs rounded-b-2xl'
         }`}
       >
@@ -39,10 +39,10 @@ export default function Header() {
             <Link href="#Kasihmam" className={`text-xl font-medium transition-all duration-500 `}>
               Kasih mam
             </Link>
-            <Link href="#contact" className={`text-xl font-medium transition-all duration-500 `}>
+            <Link href="#SettingMam" className={`text-xl font-medium transition-all duration-500 `}>
               Setting mam
             </Link>
-            <Link href="#blog" className={`text-xl font-medium transition-all duration-500 `}>
+            <Link href="#Lihatmam" className={`text-xl font-medium transition-all duration-500 `}>
               Lihat mam
             </Link>
           </div>
@@ -61,7 +61,7 @@ export default function Header() {
             <Link href="#Kasihmam" className="text-lg font-medium text-white">
               Kasih mam
             </Link>
-            <Link href="#contact" className="text-lg font-medium text-white">
+            <Link href="#SettingMam" className="text-lg font-medium text-white">
               Setting mam
             </Link>
             <Link href="#blog" className="text-lg font-medium text-white">
